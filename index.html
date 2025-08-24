@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Text Analyzer Tool</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Text Analyzer Tool</h1>
+        <p>
+          Comprehensive analysis with word count, readability metrics, and SEO
+          insights
+        </p>
+      </div>
+
+      <div class="main-content">
+        <div class="input-section">
+          <h2 class="section-title">Input Text</h2>
+          <textarea
+            id="textInput"
+            placeholder="Paste or type your text here to analyze word count, readability, sentence structure, and SEO metrics..."
+          ></textarea>
+
+          <div class="controls">
+            <button class="btn btn-primary" onclick="analyzeText()">
+              📊 Analyze Text
+            </button>
+            <button class="btn btn-secondary" onclick="clearText()">
+              🗑️ Clear
+            </button>
+            <button class="btn btn-secondary" onclick="loadSample()">
+              📝 Load Sample
+            </button>
+          </div>
+
+          <div class="sample-text">
+            💡 Tip: Try analyzing different types of content (articles, emails,
+            social media posts) to see how metrics vary!
+          </div>
+        </div>
+
+        <div class="results-section">
+          <h2 class="section-title">Analysis Results</h2>
+          <div id="results">
+            <div class="empty-state">
+              <p>
+                Enter some text and click "Analyze Text" to see comprehensive
+                analysis results including word count, readability scores, and
+                SEO metrics.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <footer>
+      Developed by Pukkawit @ 2021 -
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+    </footer>
+  </body>
+</html>
